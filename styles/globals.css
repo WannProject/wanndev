@@ -49,3 +49,10 @@
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
 }
+
+@media (max-width: 600px) {
+  /* Target screens less than 768px wide (typical mobile breakpoint) */
+  .container p {
+    display: none; /* Hide the text on mobile devices */
+  }
+}
