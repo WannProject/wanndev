@@ -2,7 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // tambahkan konfigurasi output export di sini jika diperlukan
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig;

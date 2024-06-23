@@ -1,15 +1,15 @@
-// next image
 import Image from "next/image";
 
 const Avatar = () => {
   return (
-    <div className="hidden xl:flex xl:max-w-none">
+    <div className="relative w-[250px] h-[250px] xl:w-[600px] xl:h-[600px]">
+      {" "}
+      {/* Menyesuaikan ukuran gambar */}
       <Image
-        src="/avatar1.png"
-        width={737}
-        height={678}
+        src="/avatar.png"
+        layout="fill" // Menggunakan layout fill untuk mengisi kontainer div
+        objectFit="cover" // Menyesuaikan gambar agar sesuai dengan kontainer
         alt="Avatar Image"
-        className="translate-z-0 w-full h-full"
       />
     </div>
   );

@@ -88,36 +88,40 @@ const WorkSlider = () => {
                 className="relative rounded-lg overflow-hidden flex items-center justify-center group"
               >
                 <div className="flex items-center justify-center relative overflow-hidden group">
-                  <Link href={image.link} target="_blank">
-                    <Image
-                      src={image.path}
-                      width={500}
-                      height={300}
-                      alt={image.title}
-                      className="transition-transform duration-700 group-hover:scale-105"
-                    />
-                    {/* overlay gradient */}
-                    <div
-                      className="absolute inset-0 bg-gradient-to-l
+                  <Image
+                    src={image.path}
+                    width={500}
+                    height={300}
+                    alt={image.title}
+                    className="transition-transform duration-700 group-hover:scale-105"
+                  />
+                  {/* overlay gradient */}
+                  <div
+                    className="absolute inset-0 bg-gradient-to-l
                       from-transparent via-[#e838cc] to-[#4a22bd] opacity-0
                       group-hover:opacity-80 transition-all duration-700"
-                    ></div>
-                    {/* title */}
-                    <div
-                      className="absolute bottom-0 translate-y-full 
+                  ></div>
+                  {/* title */}
+                  <div
+                    className="absolute bottom-0 translate-y-full 
                       group-hover:-translate-y-10 group-hover:xl-translate-y-20 
                       transition-all duration-300"
-                    >
-                      <div
-                        className="flex items-center gap-x-2 text-[13px] 
+                  >
+                    <div
+                      className="flex items-center justify-center gap-x-2 text-[13px] 
                         tracking-[0.2m]"
+                    >
+                      <Link
+                        href={image.link}
+                        target="_blank"
+                        className="flex items-center"
                       >
                         {/* title part1 */}
-                        <div className="delay-100">LIVE</div>
+                        <div className="delay-100">LIVE </div>
                         {/* title part2 */}
                         <div
                           className="translate-y-[500%] group-hover:translate-y-0
-                          transition-all duration-300 delay-150"
+                          transition-all duration-300 delay-150 ml-2"
                         >
                           PROJECT
                         </div>
@@ -127,11 +131,11 @@ const WorkSlider = () => {
                           group-hover:translate-y-0 transition-all 
                           duration-300 delay-200"
                         >
-                          <BsArrowRight />
+                          <BsArrowRight className="ml-2" />
                         </div>
-                      </div>
+                      </Link>
                     </div>
-                  </Link>
+                  </div>
                 </div>
               </div>
             ))}

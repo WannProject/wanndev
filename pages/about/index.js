@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+// next image
+import Image from "next/image";
+
 // icons
 import {
   FaHtml5,
@@ -100,7 +103,7 @@ const aboutData = [
 ];
 
 // components
-import Avatar from "../../components/avatar";
+import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 
 // framer motion
@@ -121,7 +124,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[300px]" // Sesuaikan posisi agar sesuai
       >
         <Avatar />
       </motion.div>
