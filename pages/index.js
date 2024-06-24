@@ -19,7 +19,7 @@ const Home = () => {
             Wujudkan <span className="text-accent">mimpi</span> menjadi
             <br />
             kenyataan dengan <br /> {""} sentuhan
-            <span className="text-accent"> kode.</span>
+            <span className="text-accent"> code.</span>
           </motion.h1>
           <motion.p
             variants={fadeIn("down", 0.3)}
