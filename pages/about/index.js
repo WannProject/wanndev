@@ -62,7 +62,7 @@ const aboutData = [
       },
       {
         title: "ITB Bina Adinata - Information Systems",
-        stage: "2021 - 2025",
+        stage: "2021 - Now",
       },
     ],
   },
@@ -75,7 +75,7 @@ const aboutData = [
       },
       {
         title: "Web Developer - PT.FORTINUSA MAKASSAR",
-        stage: "2021 - 2023",
+        stage: "2021 - 2022",
       },
       {
         title: "Freelancer - Upwork, Fiver, Dribbble",
@@ -87,16 +87,16 @@ const aboutData = [
     title: "certificate",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
+        title: "TKJ CLUB - Aksara Tekno Edukasi",
+        stage: "2021",
+      },
+      {
+        title: "Lembaga Pelatihan Kerja - LPK Tujuh Sembilan",
+        stage: "2021",
+      },
+      {
+        title: "Web Developer batch#2 - Makassar Developer Enthusiast",
         stage: "2023",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2025",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2025",
       },
     ],
   },
@@ -128,7 +128,9 @@ const About = () => {
       >
         <Avatar />
       </motion.div>
-      <div className=" container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 overflow-y-auto md:overflow-visible">
+        {" "}
+        {/* Menambahkan overflow-y-auto di sini untuk mobile dan md:overflow-visible untuk desktop */}
         <div className="flex-1 flex flex-col justify-center">
           {/* text */}
           <motion.h2
@@ -159,13 +161,13 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden  md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
             <div className="flex flex-1 xl:gap-x-6">
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="tet-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={6} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
@@ -174,7 +176,7 @@ const About = () => {
               {/* satisfied client */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="tet-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={17} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied Client
@@ -183,7 +185,7 @@ const About = () => {
               {/* finished project */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="tet-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={20} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished project
@@ -192,7 +194,7 @@ const About = () => {
               {/* awards */}
               <div className="relative ">
                 <div className="tet-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} /> +
+                  <CountUp start={0} end={5} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Winning awards
