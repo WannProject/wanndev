@@ -15,14 +15,14 @@ const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
       <Link
-        href={"https://youtube.com/@awan_kurniawan2962?si=q3_KOnw3H3C3mDkg"}
+        href={"https://www.youtube.com/@wanndev-code"}
         target="blank"
         className="hover:text-accent transition-all duration-300"
       >
         <RiYoutubeLine />
       </Link>
       <Link
-        href={"https://www.instagram.com/wann_xi/"}
+        href={"https://www.instagram.com/wanndev_/"}
         target="blank"
         className="hover:text-accent transition-all duration-300"
       >
